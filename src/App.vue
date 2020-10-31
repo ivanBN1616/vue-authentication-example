@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <navigation />
-    <div class="main-container">
+    <div class="main-container clickable">
       <center-container>
         <router-view />
       </center-container>
@@ -14,7 +14,6 @@
 import Navigation from "components/navigation";
 import { USER_REQUEST } from "actions/user";
 import SqreenFooter from "./components/footer/index.vue";
-
 export default {
   components: {
     SqreenFooter,
@@ -30,6 +29,14 @@ export default {
 </script>
 
 <style>
+/* #app {
+  background-image: url("https://images.unsplash.com/photo-1497733942558-e74c87ef89db?dpr=1&auto=compress,format&fit=crop&w=1650&h=&q=80&cs=tinysrgb&crop=");
+  background-size: cover;
+  overflow: hidden;
+} */
+/* .clickable {
+  -webkit-app-region: no-drag;
+} */
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;

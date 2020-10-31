@@ -6,6 +6,7 @@ import router from "./router";
 import store from "./store";
 import Loading from "components/lib/loading";
 import CenterContainer from "components/lib/center-container";
+import vuetify from "./plugins/vuetify";
 
 Vue.config.productionTip = false;
 
@@ -17,5 +18,6 @@ new Vue({
   router,
   store,
   template: "<App/>",
+  vuetify,
   components: { App }
 });

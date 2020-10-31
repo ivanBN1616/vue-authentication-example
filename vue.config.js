@@ -1,6 +1,17 @@
 const path = require('path');
 
 module.exports = {
+  pluginOptions: {
+    electronBuilder: {
+      builderOptions: {
+        nsis: {
+          oneClick: false,
+          allowToChangeInstallationDirectory: true,
+          multiLanguageInstaller: true,
+        }
+      },
+    },
+  },
   lintOnSave: false,
   runtimeCompiler: true,
   configureWebpack: {
